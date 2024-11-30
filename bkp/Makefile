@@ -1,14 +1,14 @@
 FLAGS=-O2
 
-CC=pgcc
+CC=gcc
 
 RM=rm -f
 
-EXEC=dijkstra
+EXEC=dijkstra_sequential
 
 all: $(EXEC)
 
-$(EXEC):
+$(EXEC): clean
 	$(CC) $(FLAGS) $(EXEC).c -c -o $(EXEC).o
 	$(CC) $(FLAGS) $(EXEC).o -o $(EXEC)
 

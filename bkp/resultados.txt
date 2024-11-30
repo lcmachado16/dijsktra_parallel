@@ -1,0 +1,177 @@
+
+==================== [Sequencial] NOVA EXECUCAO ==================== 
+
+{ nNodes: 10000 :: nEdges: 300  :: seed: 3  :: { Tempo de execução: 0.108938	 :: (mean/nodes): 4.00} 
+{ nNodes: 11000 :: nEdges: 330  :: seed: 4  :: { Tempo de execução: 0.086177	 :: (mean/nodes): 1073741826.11} 
+{ nNodes: 12000 :: nEdges: 360  :: seed: 1  :: { Tempo de execução: 0.164212	 :: (mean/nodes): 3.94} 
+{ nNodes: 13000 :: nEdges: 390  :: seed: 2  :: { Tempo de execução: 0.124091	 :: (mean/nodes): 1073741826.19} 
+{ nNodes: 14000 :: nEdges: 420  :: seed: 3  :: { Tempo de execução: 0.204924	 :: (mean/nodes): 3.79} 
+{ nNodes: 15000 :: nEdges: 450  :: seed: 4  :: { Tempo de execução: 0.163640	 :: (mean/nodes): 1073741825.99} 
+{ nNodes: 16000 :: nEdges: 480  :: seed: 1  :: { Tempo de execução: 0.302549	 :: (mean/nodes): 3.87} 
+{ nNodes: 17000 :: nEdges: 510  :: seed: 2  :: { Tempo de execução: 0.217076	 :: (mean/nodes): 1073741826.07} 
+{ nNodes: 18000 :: nEdges: 540  :: seed: 3  :: { Tempo de execução: 0.335712	 :: (mean/nodes): 3.73} 
+{ nNodes: 19000 :: nEdges: 570  :: seed: 4  :: { Tempo de execução: 0.282190	 :: (mean/nodes): 1073741825.91} 
+{ nNodes: 20000 :: nEdges: 600  :: seed: 1  :: { Tempo de execução: 0.450109	 :: (mean/nodes): 3.75} 
+{ nNodes: 21000 :: nEdges: 630  :: seed: 2  :: { Tempo de execução: 0.331487	 :: (mean/nodes): 1073741826.06} 
+{ nNodes: 22000 :: nEdges: 660  :: seed: 3  :: { Tempo de execução: 0.484048	 :: (mean/nodes): 3.67} 
+{ nNodes: 23000 :: nEdges: 690  :: seed: 4  :: { Tempo de execução: 0.437254	 :: (mean/nodes): 1073741825.88} 
+{ nNodes: 24000 :: nEdges: 720  :: seed: 1  :: { Tempo de execução: 0.611589	 :: (mean/nodes): 3.71} 
+{ nNodes: 25000 :: nEdges: 750  :: seed: 2  :: { Tempo de execução: 0.524033	 :: (mean/nodes): 1073741825.97} 
+{ nNodes: 26000 :: nEdges: 780  :: seed: 3  :: { Tempo de execução: 0.646848	 :: (mean/nodes): 3.62} 
+{ nNodes: 27000 :: nEdges: 810  :: seed: 4  :: { Tempo de execução: 0.587930	 :: (mean/nodes): 1073741825.80} 
+{ nNodes: 28000 :: nEdges: 840  :: seed: 1  :: { Tempo de execução: 0.790195	 :: (mean/nodes): 3.66} 
+{ nNodes: 29000 :: nEdges: 870  :: seed: 2  :: { Tempo de execução: 0.701487	 :: (mean/nodes): 1073741825.89} 
+{ nNodes: 30000 :: nEdges: 900  :: seed: 3  :: { Tempo de execução: 0.832315	 :: (mean/nodes): 3.57} 
+
+==================== [Sequencial] NOVA EXECUCAO ==================== 
+
+{ nNodes: 20000 :: nEdges: 350  :: seed: 1  :: { Tempo de execução: 0.518452	 :: (mean/nodes): 4.19} 
+{ nNodes: 22000 :: nEdges: 385  :: seed: 2  :: { Tempo de execução: 0.349492	 :: (mean/nodes): 1073741826.27} 
+{ nNodes: 24000 :: nEdges: 420  :: seed: 3  :: { Tempo de execução: 0.852143	 :: (mean/nodes): 4.05} 
+{ nNodes: 26000 :: nEdges: 455  :: seed: 4  :: { Tempo de execução: 0.517711	 :: (mean/nodes): 1073741826.15} 
+{ nNodes: 28000 :: nEdges: 490  :: seed: 5  :: { Tempo de execução: 1.210411	 :: (mean/nodes): 3.99} 
+{ nNodes: 30000 :: nEdges: 525  :: seed: 1  :: { Tempo de execução: 1.415422	 :: (mean/nodes): 4.05} 
+{ nNodes: 32000 :: nEdges: 560  :: seed: 2  :: { Tempo de execução: 0.750415	 :: (mean/nodes): 1073741826.21} 
+{ nNodes: 34000 :: nEdges: 595  :: seed: 3  :: { Tempo de execução: 1.801288	 :: (mean/nodes): 3.94} 
+{ nNodes: 36000 :: nEdges: 630  :: seed: 4  :: { Tempo de execução: 1.058030	 :: (mean/nodes): 1073741826.07} 
+{ nNodes: 38000 :: nEdges: 665  :: seed: 5  :: { Tempo de execução: 2.116274	 :: (mean/nodes): 3.87} 
+{ nNodes: 40000 :: nEdges: 700  :: seed: 1  :: { Tempo de execução: 2.576719	 :: (mean/nodes): 3.94} 
+{ nNodes: 42000 :: nEdges: 735  :: seed: 2  :: { Tempo de execução: 1.339460	 :: (mean/nodes): 1073741826.17} 
+{ nNodes: 44000 :: nEdges: 770  :: seed: 3  :: { Tempo de execução: 2.637554	 :: (mean/nodes): 3.81} 
+{ nNodes: 46000 :: nEdges: 805  :: seed: 4  :: { Tempo de execução: 1.869042	 :: (mean/nodes): 1073741826.01} 
+{ nNodes: 48000 :: nEdges: 840  :: seed: 5  :: { Tempo de execução: 2.883853	 :: (mean/nodes): 3.75} 
+{ nNodes: 50000 :: nEdges: 875  :: seed: 1  :: { Tempo de execução: 3.792423	 :: (mean/nodes): 3.85} 
+{ nNodes: 52000 :: nEdges: 910  :: seed: 2  :: { Tempo de execução: 2.343971	 :: (mean/nodes): 1073741826.06} 
+{ nNodes: 54000 :: nEdges: 945  :: seed: 3  :: { Tempo de execução: 3.486357	 :: (mean/nodes): 3.72} 
+{ nNodes: 56000 :: nEdges: 980  :: seed: 4  :: { Tempo de execução: 2.899947	 :: (mean/nodes): 1073741825.96} 
+{ nNodes: 58000 :: nEdges: 1015  :: seed: 5  :: { Tempo de execução: 3.916269	 :: (mean/nodes): 3.70} 
+{ nNodes: 60000 :: nEdges: 1050  :: seed: 1  :: { Tempo de execução: 4.966840	 :: (mean/nodes): 3.79} 
+
+==================== [Sequencial] NOVA EXECUCAO ==================== 
+
+{ nNodes: 25000 :: nEdges: 400  :: seed: 1  :: { Tempo de execução: 0.868228	 :: (mean/nodes): 4.19} 
+{ nNodes: 27500 :: nEdges: 440  :: seed: 2  :: { Tempo de execução: 0.535714	 :: (mean/nodes): 1073741826.31} 
+{ nNodes: 30000 :: nEdges: 480  :: seed: 3  :: { Tempo de execução: 1.411119	 :: (mean/nodes): 4.07} 
+{ nNodes: 32500 :: nEdges: 520  :: seed: 4  :: { Tempo de execução: 0.785844	 :: (mean/nodes): 1073741826.17} 
+{ nNodes: 35000 :: nEdges: 560  :: seed: 5  :: { Tempo de execução: 1.961269	 :: (mean/nodes): 3.99} 
+{ nNodes: 37500 :: nEdges: 600  :: seed: 1  :: { Tempo de execução: 2.283318	 :: (mean/nodes): 4.04} 
+{ nNodes: 40000 :: nEdges: 640  :: seed: 2  :: { Tempo de execução: 1.155519	 :: (mean/nodes): 1073741826.21} 
+{ nNodes: 42500 :: nEdges: 680  :: seed: 3  :: { Tempo de execução: 2.762005	 :: (mean/nodes): 3.90} 
+{ nNodes: 45000 :: nEdges: 720  :: seed: 4  :: { Tempo de execução: 1.749902	 :: (mean/nodes): 1073741826.06} 
+{ nNodes: 47500 :: nEdges: 760  :: seed: 5  :: { Tempo de execução: 3.289445	 :: (mean/nodes): 3.84} 
+{ nNodes: 50000 :: nEdges: 800  :: seed: 1  :: { Tempo de execução: 4.104229	 :: (mean/nodes): 3.95} 
+{ nNodes: 52500 :: nEdges: 840  :: seed: 2  :: { Tempo de execução: 2.219617	 :: (mean/nodes): 1073741826.13} 
+{ nNodes: 55000 :: nEdges: 880  :: seed: 3  :: { Tempo de execução: 4.334924	 :: (mean/nodes): 3.81} 
+{ nNodes: 57500 :: nEdges: 920  :: seed: 4  :: { Tempo de execução: 3.022943	 :: (mean/nodes): 1073741825.98} 
+{ nNodes: 60000 :: nEdges: 960  :: seed: 5  :: { Tempo de execução: 4.722674	 :: (mean/nodes): 3.75} 
+{ nNodes: 62500 :: nEdges: 1000  :: seed: 1  :: { Tempo de execução: 5.895231	 :: (mean/nodes): 3.84} 
+{ nNodes: 65000 :: nEdges: 1040  :: seed: 2  :: { Tempo de execução: 3.800812	 :: (mean/nodes): 1073741826.05} 
+{ nNodes: 67500 :: nEdges: 1080  :: seed: 3  :: { Tempo de execução: 5.578209	 :: (mean/nodes): 3.72} 
+{ nNodes: 70000 :: nEdges: 1120  :: seed: 4  :: { Tempo de execução: 4.629027	 :: (mean/nodes): 1073741825.92} 
+{ nNodes: 72500 :: nEdges: 1160  :: seed: 5  :: { Tempo de execução: 6.180235	 :: (mean/nodes): 3.70} 
+{ nNodes: 75000 :: nEdges: 1200  :: seed: 1  :: { Tempo de execução: 7.224742	 :: (mean/nodes): 3.74} 
+
+==================== [Sequencial] NOVA EXECUCAO ==================== 
+
+
+==================== [Sequencial] NOVA EXECUCAO ==================== 
+
+{ nNodes: 50000 :: nEdges: 800  :: seed: 1  :: { Tempo de execução: 4.109433	 :: (mean/nodes): 3.95} 
+{ nNodes: 55000 :: nEdges: 880  :: seed: 2  :: { Tempo de execução: 2.518198	 :: (mean/nodes): 1073741826.11} 
+{ nNodes: 60000 :: nEdges: 960  :: seed: 3  :: { Tempo de execução: 4.663876	 :: (mean/nodes): 3.76} 
+{ nNodes: 65000 :: nEdges: 1040  :: seed: 4  :: 
+==================== [Sequencial] NOVA EXECUCAO ==================== 
+
+{ nNodes: 50000 :: nEdges: 8000  :: seed: 1  :: { Tempo de execução: 2.479721	 :: (mean/nodes): 3.39} 
+{ nNodes: 55000 :: nEdges: 8800  :: seed: 2  :: { Tempo de execução: 2.286476	 :: (mean/nodes): 1073741825.47} 
+{ nNodes: 60000 :: nEdges: 9600  :: seed: 3  :: { Tempo de execução: 4.088563	 :: (mean/nodes): 3.39} 
+{ nNodes: 65000 :: nEdges: 10400  :: seed: 4  :: { Tempo de execução: 3.210284	 :: (mean/nodes): 1073741825.47} 
+{ nNodes: 70000 :: nEdges: 11200  :: seed: 5  :: { Tempo de execução: 5.043903	 :: (mean/nodes): 3.38} 
+{ nNodes: 75000 :: nEdges: 12000  :: seed: 1  :: { Tempo de execução: 5.584158	 :: (mean/nodes): 3.39} 
+{ nNodes: 80000 :: nEdges: 12800  :: seed: 2  :: { Tempo de execução: 4.952709	 :: (mean/nodes): 1073741825.47} 
+{ nNodes: 85000 :: nEdges: 13600  :: seed: 3  :: { Tempo de execução: 7.763182	 :: (mean/nodes): 3.39} 
+{ nNodes: 90000 :: nEdges: 14400  :: seed: 4  :: { Tempo de execução: 6.481747	 :: (mean/nodes): 1073741825.47} 
+{ nNodes: 95000 :: nEdges: 15200  :: seed: 5  :: { Tempo de execução: 9.949852	 :: (mean/nodes): 3.38} 
+{ nNodes: 100000 :: nEdges: 16000  :: seed: 1  :: { Tempo de execução: 10.757433	 :: (mean/nodes): 3.39} 
+{ nNodes: 105000 :: nEdges: 16800  :: seed: 2  :: { Tempo de execução: 10.750177	 :: (mean/nodes): 1073741825.47} 
+{ nNodes: 110000 :: nEdges: 17600  :: seed: 3  :: { nNodes: 115000 :: nEdges: 18400  :: seed: 4  :: { nNodes: 120000 :: nEdges: 19200  :: seed: 5  :: { Tempo de execução: 14.568348	 :: (mean/nodes): 2147465751.30} 
+{ nNodes: 125000 :: nEdges: 20000  :: seed: 1  :: 
+==================== [Sequencial] NOVA EXECUCAO ==================== 
+
+{ nNodes: 40000 :: nEdges: 1600  :: seed: 1  :: { Tempo de execução: 1.233582	 :: (mean/nodes): 3.48} 
+{ nNodes: 44000 :: nEdges: 1760  :: seed: 2  :: { Tempo de execução: 1.516731	 :: (mean/nodes): 1073741825.57} 
+{ nNodes: 48000 :: nEdges: 1920  :: seed: 3  :: { Tempo de execução: 1.763256	 :: (mean/nodes): 3.47} 
+{ nNodes: 52000 :: nEdges: 2080  :: seed: 4  :: { Tempo de execução: 1.877257	 :: (mean/nodes): 1073741825.51} 
+{ nNodes: 56000 :: nEdges: 2240  :: seed: 5  :: { Tempo de execução: 2.438295	 :: (mean/nodes): 3.47} 
+{ nNodes: 60000 :: nEdges: 2400  :: seed: 1  :: { Tempo de execução: 2.753424	 :: (mean/nodes): 3.47} 
+{ nNodes: 64000 :: nEdges: 2560  :: seed: 2  :: { Tempo de execução: 2.876934	 :: (mean/nodes): 1073741825.51} 
+{ nNodes: 68000 :: nEdges: 2720  :: seed: 3  :: { Tempo de execução: 3.557030	 :: (mean/nodes): 3.47} 
+{ nNodes: 72000 :: nEdges: 2880  :: seed: 4  :: { Tempo de execução: 3.568425	 :: (mean/nodes): 1073741825.50} 
+{ nNodes: 76000 :: nEdges: 3040  :: seed: 5  :: { Tempo de execução: 4.578314	 :: (mean/nodes): 3.47} 
+{ nNodes: 80000 :: nEdges: 3200  :: seed: 1  :: { Tempo de execução: 4.959378	 :: (mean/nodes): 3.47} 
+{ nNodes: 84000 :: nEdges: 3360  :: seed: 2  :: { Tempo de execução: 4.853354	 :: (mean/nodes): 1073741825.50} 
+{ nNodes: 88000 :: nEdges: 3520  :: seed: 3  :: { Tempo de execução: 6.526605	 :: (mean/nodes): 3.47} 
+{ nNodes: 92000 :: nEdges: 3680  :: seed: 4  :: { Tempo de execução: 5.912146	 :: (mean/nodes): 1073741825.49} 
+{ nNodes: 96000 :: nEdges: 3840  :: seed: 5  :: { Tempo de execução: 7.283577	 :: (mean/nodes): 3.47} 
+{ nNodes: 100000 :: nEdges: 4000  :: seed: 1  :: { Tempo de execução: 8.042277	 :: (mean/nodes): 3.47} 
+{ nNodes: 104000 :: nEdges: 4160  :: seed: 2  :: { Tempo de execução: 7.435805	 :: (mean/nodes): 1073741825.49} 
+{ nNodes: 108000 :: nEdges: 4320  :: seed: 3  :: { Tempo de execução: 9.046562	 :: (mean/nodes): 3.47} 
+{ nNodes: 112000 :: nEdges: 4480  :: seed: 4  :: { Tempo de execução: 8.658173	 :: (mean/nodes): 1073741825.49} 
+{ nNodes: 116000 :: nEdges: 4640  :: seed: 5  :: { Tempo de execução: 12.019164	 :: (mean/nodes): 3.47} 
+{ nNodes: 120000 :: nEdges: 4800  :: seed: 1  :: { Tempo de execução: 11.174055	 :: (mean/nodes): 3.47} 
+{ nNodes: 80000 :: nEdges: 3200  :: seed: 1  :: 
+==================== [Sequencial] NOVA EXECUCAO ==================== 
+
+>>NUM_THREADS= 4
+{ nNodes: 40000 :: nEdges: 1600  :: seed: 1  :: { Tempo de execução: 1.236816	 :: (mean/nodes): 3.48} 
+{ nNodes: 44000 :: nEdges: 1760  :: seed: 2  :: { Tempo de execução: 1.427085	 :: (mean/nodes): 1073741825.57} 
+{ nNodes: 48000 :: nEdges: 1920  :: seed: 3  :: { Tempo de execução: 1.742095	 :: (mean/nodes): 3.47} 
+{ nNodes: 52000 :: nEdges: 2080  :: seed: 4  :: { Tempo de execução: 1.883087	 :: (mean/nodes): 1073741825.51} 
+{ nNodes: 56000 :: nEdges: 2240  :: seed: 5  :: { Tempo de execução: 2.450772	 :: (mean/nodes): 3.47} 
+{ nNodes: 60000 :: nEdges: 2400  :: seed: 1  :: 
+==================== [Sequencial] NOVA EXECUCAO ==================== 
+
+>>NUM_THREADS= 4
+{ nNodes: 80000 :: nEdges: 3200  :: seed: 1  :: { Tempo de execução: 4.877556	 :: (mean/nodes): 3.47} 
+{ nNodes: 84000 :: nEdges: 3360  :: seed: 2  :: { Tempo de execução: 4.872022	 :: (mean/nodes): 1073741825.50} 
+{ nNodes: 88000 :: nEdges: 3520  :: seed: 3  :: 
+==================== [Sequencial] NOVA EXECUCAO ==================== 
+
+>>NUM_THREADS= 4
+{ nNodes: 40000 :: nEdges: 1600  :: seed: 2  :: { Tempo de execução: 1.225619	 :: (mean/nodes): 1073741825.60} 
+{ nNodes: 80000 :: nEdges: 3200  :: seed: 3  :: { Tempo de execução: 5.001461	 :: (mean/nodes): 3.47} 
+{ nNodes: 120000 :: nEdges: 4800  :: seed: 4  :: { Tempo de execução: 9.924353	 :: (mean/nodes): 1073741825.49} 
+{ nNodes: 160000 :: nEdges: 6400  :: seed: 5  :: { Tempo de execução: 20.286171	 :: (mean/nodes): 3.47} 
+{ nNodes: 200000 :: nEdges: 8000  :: seed: 1  :: { Tempo de execução: 46.489661	 :: (mean/nodes): 3.47} 
+{ nNodes: 240000 :: nEdges: 9600  :: seed: 2  :: { Tempo de execução: 58.379259	 :: (mean/nodes): 2147474699.15} 
+{ nNodes: 280000 :: nEdges: 11200  :: seed: 3  :: { Tempo de execução: 79.407767	 :: (mean/nodes): 2147475977.42} 
+{ nNodes: 320000 :: nEdges: 12800  :: seed: 4  :: { Tempo de execução: 103.773967	 :: (mean/nodes): 2147476936.11} 
+{ nNodes: 360000 :: nEdges: 14400  :: seed: 5  :: { Tempo de execução: 166.831209	 :: (mean/nodes): 3.74} 
+{ nNodes: 400000 :: nEdges: 16000  :: seed: 1  :: >>NUM_THREADS= 8
+{ nNodes: 40000 :: nEdges: 1600  :: seed: 2  :: { Tempo de execução: 1.196125	 :: (mean/nodes): 1073741825.60} 
+{ nNodes: 80000 :: nEdges: 3200  :: seed: 3  :: { Tempo de execução: 5.009335	 :: (mean/nodes): 3.47} 
+{ nNodes: 120000 :: nEdges: 4800  :: seed: 4  :: { Tempo de execução: 9.904038	 :: (mean/nodes): 1073741825.49} 
+{ nNodes: 160000 :: nEdges: 6400  :: seed: 5  :: { Tempo de execução: 20.297930	 :: (mean/nodes): 3.47} 
+{ nNodes: 200000 :: nEdges: 8000  :: seed: 1  :: { Tempo de execução: 32.875927	 :: (mean/nodes): 3.47} 
+{ nNodes: 240000 :: nEdges: 9600  :: seed: 2  :: { Tempo de execução: 58.403501	 :: (mean/nodes): 2147474699.15} 
+{ nNodes: 280000 :: nEdges: 11200  :: seed: 3  :: { Tempo de execução: 78.874062	 :: (mean/nodes): 2147475977.42} 
+{ nNodes: 320000 :: nEdges: 12800  :: seed: 4  :: { Tempo de execução: 103.522044	 :: (mean/nodes): 2147476936.11} 
+{ nNodes: 360000 :: nEdges: 14400  :: seed: 5  :: { Tempo de execução: 167.463747	 :: (mean/nodes): 3.74} 
+{ nNodes: 400000 :: nEdges: 16000  :: seed: 1  :: >>NUM_THREADS= 12
+{ nNodes: 40000 :: nEdges: 1600  :: seed: 2  :: { Tempo de execução: 1.213687	 :: (mean/nodes): 1073741825.60} 
+{ nNodes: 80000 :: nEdges: 3200  :: seed: 3  :: { Tempo de execução: 5.225725	 :: (mean/nodes): 3.47} 
+{ nNodes: 120000 :: nEdges: 4800  :: seed: 4  :: { Tempo de execução: 9.902064	 :: (mean/nodes): 1073741825.49} 
+{ nNodes: 160000 :: nEdges: 6400  :: seed: 5  :: { Tempo de execução: 20.163235	 :: (mean/nodes): 3.47} 
+{ nNodes: 200000 :: nEdges: 8000  :: seed: 1  :: { Tempo de execução: 30.944037	 :: (mean/nodes): 3.47} 
+{ nNodes: 240000 :: nEdges: 9600  :: seed: 2  :: 
+==================== [Sequencial] NOVA EXECUCAO ==================== 
+
+
+
+==================== [Sequencial] NOVA EXECUCAO ==================== 
+
+{ nNodes: 90000 :: nEdges: 18000000  :: seed: 2  ::  Tempo de execução: 7.017111	 :: (mean/nodes): 1073741827.09} 
+{ nNodes: 180000 :: nEdges: 72000000  :: seed: 3  ::  Tempo de execução: 29.873572	 :: (mean/nodes): 4.82} 
+{ nNodes: 270000 :: nEdges: 162000000  :: seed: 4  ::  Tempo de execução: 48.124940	 :: (mean/nodes): 1073741826.44} 
+{ nNodes: 360000 :: nEdges: 288000000  :: seed: 5  ::  Tempo de execução: 151.385813	 :: (mean/nodes): 4.67} 
+{ nNodes: 450000 :: nEdges: 450000000  :: seed: 1  ::  Tempo de execução: 237.283394	 :: (mean/nodes): 4.67} 

@@ -3,7 +3,6 @@
 #include <assert.h>
 #include <limits.h>
 #include <time.h>
-#include <omp.h>
 
 static unsigned long int next = 1;
 
@@ -68,12 +67,9 @@ int *dijkstra(struct Graph *graph, int source) {
 	for (k = 0; k < graph->nEdges[source]; k++)
 		distances[graph->edges[source][k]] = graph->w[source][k];
 
-	#pragma omp single
 	for (v = 1; v < nNodes; v++) {
 		int min = 0;
 		int minValue = INT_MAX;
-
-		#pragma omp taskloop
 		for (k = 0; k < nNodes; k++)
 			if (visited[k] == 0 && distances[k] < minValue) {
 				minValue = distances[k];
@@ -112,6 +108,7 @@ int main(int argc, char ** argv) {
 
 	struct Graph *graph = createRandomGraph(nNodes, nEdges, seed);
 
+
 	/*---------------------------------------------------------------------------------*/	
 	clock_t start, end;
 	start = clock();
@@ -126,15 +123,12 @@ int main(int argc, char ** argv) {
 	fclose(file_result);
 	/*---------------------------------------------------------------------------------*/
 
-
-
 	double mean = 0;
 	int v;
-
 	for (v = 0; v < graph->nNodes; v++)
 		mean += dist[v];
 
-	fprintf(stdout, "%.2f}\n ", mean / nNodes);
+	fprintf(stdout, "%.2f} \n", mean / nNodes);
 
 	return 0;
 }
