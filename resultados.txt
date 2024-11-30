@@ -1,0 +1,4 @@
+{ nNodes:  30000 	 :: nEdges:: 300000000 :: seed: 2 	  Tempo de execução: 0.792262	 ::  
+=======-================ NOVA EXECUCAO ==================================
+{ nNodes:  180000 	 :: nEdges:: -979869184 :: seed: 2 	  Tempo de execução: 32.599314	 } 
+ 
