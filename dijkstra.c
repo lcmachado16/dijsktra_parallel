@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <limits.h>
-#include <time.h>
+#include <sys/time.h>
 #include <omp.h>
 
 static unsigned long int next = 1;
@@ -54,45 +54,90 @@ struct Graph *createRandomGraph(int nNodes, int nEdges, int seed) {
 }
 
 int *dijkstra(struct Graph *graph, int source) {
-	int nNodes = graph->nNodes;
-	int *visited = (int *) malloc(sizeof(int) * nNodes);
-	int *distances = (int *) malloc(sizeof(int) * nNodes);
-	int k, v;
+    int nNodes = graph->nNodes;
+    int *visited = (int *) malloc(sizeof(int) * nNodes);
+    int *distances = (int *) malloc(sizeof(int) * nNodes);
+    int v, k;
 
-	for (v = 0; v < nNodes; v++) {
-		distances[v] = INT_MAX;
-		visited[v] = 0;
-	}
-	distances[source] = 0;
-	visited[source] = 1;
-	for (k = 0; k < graph->nEdges[source]; k++)
-		distances[graph->edges[source][k]] = graph->w[source][k];
+    for (v = 0; v < nNodes; v++) {
+        distances[v] = INT_MAX;
+        visited[v] = 0;
+    }
+    distances[source] = 0;
+    visited[source] = 1;
 
-	#pragma omp single
-	for (v = 1; v < nNodes; v++) {
-		int min = 0;
-		int minValue = INT_MAX;
+    for (k = 0; k < graph->nEdges[source]; k++)
+        distances[graph->edges[source][k]] = graph->w[source][k];
 
-		#pragma omp taskloop
-		for (k = 0; k < nNodes; k++)
-			if (visited[k] == 0 && distances[k] < minValue) {
-				minValue = distances[k];
-				min = k;
-			}
+    for (v = 1; v < nNodes; v++) {
 
-		visited[min] = 1;
+        int min = -1;
+        int minValue = INT_MAX;
 
-		for (k = 0; k < graph->nEdges[min]; k++) {
-			int dest = graph->edges[min][k];
-			if (distances[dest] > distances[min] + graph->w[min][k])
-				distances[dest] = distances[min] + graph->w[min][k];
-		}
-	}
+        #pragma omp parallel
+        {
+            int localMin = -1; /* local variable for each thread*/
+            int localMinValue = INT_MAX;
 
-	free(visited);
+            #pragma omp for nowait
+            for (k = 0; k < nNodes; k++) {
+                if (visited[k] == 0 && distances[k] < localMinValue) {
+                    localMinValue = distances[k];
+                    localMin = k;
+                }
+            }
 
-	return distances;
+            #pragma omp critical
+            {
+                if (localMinValue < minValue) {
+                    minValue = localMinValue;
+                    min = localMin;
+                }
+            }
+        }
+
+        if (min == -1) break;
+
+        visited[min] = 1;
+
+        #pragma omp parallel
+        {
+            #pragma omp single
+            for (k = 0; k < graph->nEdges[min]; k++) {
+                int dest = graph->edges[min][k];
+                int newDist = distances[min] + graph->w[min][k];
+                if (newDist < distances[dest]) {
+                    #pragma omp task firstprivate(dest, newDist)
+                    {
+                        if (newDist < distances[dest])
+                            distances[dest] = newDist;
+                    }
+                }
+            }
+        }
+    }
+
+    free(visited);
+    return distances;
 }
+
+/* ********************************************************************************** 
+ *  Get Time Function
+ *  Source: https://bitbucket.org/jruschel/parallel-cholesky/src/master/lib/hpcelo.c
+ ************************************************************************************/
+double hpcelo_t1, hpcelo_t2;
+
+double hpcelo_gettime (void)
+{
+  struct timeval tr;
+  gettimeofday(&tr, NULL);
+  return (double)tr.tv_sec+(double)tr.tv_usec/1000000;
+}
+
+// Macros para iniciar, terminar e obter o tempo
+#define HPCELO_START_TIMER  hpcelo_t1 = hpcelo_gettime();
+#define HPCELO_END_TIMER    hpcelo_t2 = hpcelo_gettime();
+#define HPCELO_GET_TIMER    (hpcelo_t2 - hpcelo_t1)
 
 int main(int argc, char ** argv) {
 
@@ -113,16 +158,19 @@ int main(int argc, char ** argv) {
 	struct Graph *graph = createRandomGraph(nNodes, nEdges, seed);
 
 	/*---------------------------------------------------------------------------------*/	
-	clock_t start, end;
-	start = clock();
+	// clock_t start, end;
+	// start = clock();
+	HPCELO_START_TIMER
 	/*---------------------------------------------------------------------------------*/
 	int *dist = dijkstra(graph, 0);
 	/*---------------------------------------------------------------------------------*/
-	end = clock();
+	HPCELO_END_TIMER
+	// end = clock();
 
 	FILE *file_result = fopen("resultados.txt", "a"); 
   	fprintf(file_result, "{ nNodes: %d :: nEdges: %d  :: seed: %d  :: ", nNodes, nEdges, seed);
-	fprintf(file_result, " Tempo de execução: %f\t :: (mean/nodes): ", (double)(end - start) / CLOCKS_PER_SEC);
+	// fprintf(file_result, " Tempo de execução: %f\t :: (mean/nodes): ", (double)(end - start) / CLOCKS_PER_SEC);
+	fprintf(file_result, " Tempo de execução: %f\t :: (mean/nodes): ", HPCELO_GET_TIMER);
 	fclose(file_result);
 	/*---------------------------------------------------------------------------------*/
 

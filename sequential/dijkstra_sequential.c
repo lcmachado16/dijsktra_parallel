@@ -58,12 +58,15 @@ int *dijkstra(struct Graph *graph, int source) {
 	int *distances = (int *) malloc(sizeof(int) * nNodes);
 	int k, v;
 
+	distances[source] = 0;
+	visited[source] = 1;
+
 	for (v = 0; v < nNodes; v++) {
 		distances[v] = INT_MAX;
 		visited[v] = 0;
 	}
-	distances[source] = 0;
-	visited[source] = 1;
+
+
 	for (k = 0; k < graph->nEdges[source]; k++)
 		distances[graph->edges[source][k]] = graph->w[source][k];
 

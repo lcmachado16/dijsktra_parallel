@@ -175,3 +175,4 @@
 { nNodes: 270000 :: nEdges: 162000000  :: seed: 4  ::  Tempo de execução: 48.124940	 :: (mean/nodes): 1073741826.44} 
 { nNodes: 360000 :: nEdges: 288000000  :: seed: 5  ::  Tempo de execução: 151.385813	 :: (mean/nodes): 4.67} 
 { nNodes: 450000 :: nEdges: 450000000  :: seed: 1  ::  Tempo de execução: 237.283394	 :: (mean/nodes): 4.67} 
+

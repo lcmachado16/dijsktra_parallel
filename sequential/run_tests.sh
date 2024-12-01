@@ -5,5 +5,7 @@ for i in {1..5}; do
     m=$((i * 200  ))      
     r=$(((i % 5) + 1))
     
+
     ./dijkstra_sequential "$n" "$m" "$r" >> "resultados.txt"
+ 
 done

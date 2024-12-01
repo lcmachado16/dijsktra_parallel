@@ -15,5 +15,8 @@ $(EXEC): clean
 run:
 	./$(EXEC)
 
+entrega:
+	tar -cvzf entrega.tar.gz $(EXEC).c Makefile *.pdf *.pptx *.txt run_tests.sh
+
 clean:
 	$(RM) $(EXEC).o $(EXEC)
